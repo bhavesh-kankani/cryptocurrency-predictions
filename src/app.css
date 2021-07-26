@@ -1,0 +1,263 @@
+/*centering graphs*/
+#graphs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/*changing cursors*/
+#graphs:hover {
+	cursor: pointer;
+}
+
+#landing:hover {
+	cursor: pointer;
+}
+
+#cardChart:hover {
+	cursor: pointer;
+}
+
+#closeButton:hover {
+	cursor: pointer;
+}
+
+/* landing and main page stuff */
+#header {
+	display: flex;
+	margin: 15px;
+	font-size: 10vh;
+	text-align: center;
+}
+
+#loader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 83.5vh;
+	width: 100%;
+}
+
+/* #currencyMenu {
+  margin: 0.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  margin: 0.5%;
+} */
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+#loader svg {
+	height: 100%;
+	width: 100%;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#landing {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+#landing h2 {
+	display: flex;
+	justify-content: center;
+	font-size: x-large;
+}
+
+#bottomText {
+	margin-top: 1.25%;
+	margin-bottom: 1.4%;
+	display: flex;
+	font-size: x-large;
+}
+
+h1,
+h3 {
+	margin: auto;
+}
+
+#footer {
+	margin-top: auto;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(45, 45, 51);
+	color: whitesmoke;
+}
+
+a {
+	color: whitesmoke;
+}
+
+p {
+	line-height: 1.6;
+}
+
+/* CARD - modal and related stuff */
+.Modal {
+	display: flex;
+	position: absolute;
+	top: 15vh;
+	left: 20vh;
+	right: 20vh;
+	bottom: 15vh;
+	background-color: white;
+	border: 2.5px solid white;
+	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	outline: none;
+}
+
+.Modal h1 {
+	font-size: 10vh;
+	font-weight: bold;
+	margin: 0;
+	padding-left: 0.5%;
+}
+
+.Modal h2 {
+	font-size: 5vh;
+	padding: 3.622%;
+	/* padding: 20px; */
+}
+
+#closeButton {
+	position: absolute;
+	top: 0;
+	right: 3px;
+	background-color: transparent;
+	border: 0;
+	font-size: xx-large;
+}
+
+.Overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(105, 105, 105, 0.6);
+}
+
+/* card graph css */
+#temp {
+	display: flex;
+}
+
+#cardStuff {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+#cardStuff h1 a:link {
+	color: black;
+	text-decoration: none;
+}
+
+#cardStuff h1 a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#cardStuff h1 a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+#cardStuff h1 a:active {
+	color: black;
+	text-decoration: none;
+}
+
+/* animation */
+.ReactModal__Overlay {
+	opacity: 0;
+	transition: opacity 200ms ease-in;
+}
+
+.ReactModal__Overlay--after-open {
+	opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+	opacity: 0;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 250%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.m-scene .scene_element {
+	animation-duration: 0.25s;
+	transition-timing-function: ease-in;
+	animation-fill-mode: both;
+}
+
+.m-scene .scene_element--fadein {
+	animation-name: fadeIn;
+}
+
+.m-scene .scene_element--fadeinup {
+	animation-name: fadeInUp;
+}
+
+/* chartjs css */
+#lineGraph {
+	display: inline;
+}
+
+#title {
+	font-size: 47px;
+	font-weight: bold;
+	opacity: 0.2;
+	z-index: -1;
+	position: absolute;
+}
+
+#graphDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
