@@ -47,8 +47,8 @@ export const Card = ({ id, close, links, coinsymbol }) => {
 						<br />
 						<div id="cardText">
 							<h2>Current Price: ${todayPrice}</h2>
-							<h2>1-Day Forecast: ${preddata[0].toFixed(3)}</h2>
-							<h2>7-Day Forecast: ${preddata[6].toFixed(3)}</h2>
+							<h2>1-Day Forecast: ${preddata[0].toFixed(2)}</h2>
+							<h2>7-Day Forecast: ${preddata[6].toFixed(2)}</h2>
 						</div>
 					</div>
 					<Line
